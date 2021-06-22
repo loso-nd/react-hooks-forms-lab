@@ -4,6 +4,7 @@ import Filter from "./Filter";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
+  //State for category dropdown
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   function handleCategoryChange(event) {

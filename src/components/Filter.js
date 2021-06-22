@@ -1,5 +1,5 @@
 import React from "react";
-
+//search bar and filter dropdown
 function Filter({ onCategoryChange }) {
   return (
     <div className="Filter">
