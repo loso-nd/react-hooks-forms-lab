@@ -5,6 +5,7 @@ const items = [
   { id: 4, name: "String Cheese", category: "Dairy" },
   { id: 5, name: "Swiss Cheese", category: "Dairy" },
   { id: 6, name: "Cookies", category: "Dessert" },
+  { id: 7, name: "Blueberries", category: "Fruit" }
 ];
 
 export default items;

@@ -5,30 +5,35 @@ import Item from "./Item";
 
 function ShoppingList({ items }) {
   //State for category dropdown
+  //State for filter search is set here bc filter is a child component
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [searchItem, setsearchItem] = useState("");
+  const [search, setSearch] = useState("")
 
   function handleCategoryChange(event) {
     console.log(event.target.value)
     setSelectedCategory(event.target.value);
   }
 
-  const itemsToDisplay = items.filter((item) => {
-    if (selectedCategory === "All") return true;
+  //Since both the filter and the search functionality require the items array we can define its execute in one function
+  const itemsToDisplay = items
+  //category dropdown
+  .filter((item) => selectedCategory === "All" || item.category === selectedCategory)
 
-    return item.category === selectedCategory;
-  });
+  //search bar
+  .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
 
-  function handleSearchChange(event) {
-    console.log(event.target.value)
-    setsearchItem(event.target.value);
-  }
+  const handleSearchChange = (searchTerm) => {
+   //console.log(e.target.value)
+   setSearch(searchTerm)
+
+   }
 
 
   return (
     <div className="ShoppingList">
       <ItemForm />
       <Filter 
+        search={search}
         onCategoryChange={handleCategoryChange} 
         onSearchChange={handleSearchChange}/>
       <ul className="Items">

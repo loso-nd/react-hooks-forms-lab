@@ -15,6 +15,7 @@ function ItemForm(props) {
           <option value="Produce">Produce</option>
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
+          <option value="Fruit">Fruit</option>
         </select>
       </label>
 

@@ -7,8 +7,14 @@ function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
+  }
+
+  //handler function is passed as props to <Filter />, when submit button is trigger is with execute the code inside
+  function handleItemFormSubmit() {
+
   }
 
   return (
