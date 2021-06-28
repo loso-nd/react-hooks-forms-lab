@@ -46,3 +46,11 @@ function ShoppingList({ items }) {
 }
 
 export default ShoppingList;
+
+
+/**
+ * !Deconstruct props
+ * * Step 6: Map items passed as props and return a single item into  <Item /> which will be displayed onto the DOM
+ * 
+ * 
+ */

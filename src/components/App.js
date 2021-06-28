@@ -26,3 +26,15 @@ function App() {
 }
 
 export default App;
+
+
+// 
+
+/**
+ * !Import useState
+ * *Step 1: Set State which tracks the items and if dark Mode is enabled.
+ * 
+ * *Step 2: Pass state isDarkMode as props to <Header/> and handleDarkModeClick - once button is triggered in <Header /> it will update the state here in <App/> via handle function
+ * 
+ * *Step 5: Pass items as props to <ShoppingList/>
+ */
