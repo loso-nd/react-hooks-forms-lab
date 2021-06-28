@@ -4,8 +4,7 @@ const items = [
   { id: 3, name: "Lettuce", category: "Produce" },
   { id: 4, name: "String Cheese", category: "Dairy" },
   { id: 5, name: "Swiss Cheese", category: "Dairy" },
-  { id: 6, name: "Cookies", category: "Dessert" },
-  { id: 7, name: "Blueberries", category: "Fruit" }
+  { id: 6, name: "Cookies", category: "Dessert" }
 ];
 
 export default items;
